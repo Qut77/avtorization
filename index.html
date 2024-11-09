@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация и Регистрация</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Система Авторизации</h1>
+    <div id="welcomeMessage"></div>
+    <button id="loginModalButton" class="button">Войти</button>
+    <button id="registerModalButton" class="button">Зарегистрироваться</button>
+    <button id="logoutButton" class="button">Выйти</button>
+    <!-- Модальное окно для входа -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeLoginModal">&times;</span>
+            <h2>Вход</h2>
+            <input type="text" id="loginUsername" placeholder="Имя пользователя" required>
+            <input type="password" id="loginPassword" placeholder="Пароль" required>
+            <button id="loginButton" class="button">Войти</button>
+            <div id="loginError" class="error"></div>
+        </div>
+    </div>
+    <!-- Модальное окно для регистрации -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeRegisterModal">&times;</span>
+            <h2>Регистрация</h2>
+            <input type="text" id="registerUsername" placeholder="Имя пользователя" required>
+            <input type="password" id="registerPassword" placeholder="Пароль" required>
+            <input type="password" id="registerPasswordConfirm" placeholder="Подтверждение пароля" required>
+            <button id="registerButton" class="button">Зарегистрироваться</button>
+            <div id="registerError" class="error"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
